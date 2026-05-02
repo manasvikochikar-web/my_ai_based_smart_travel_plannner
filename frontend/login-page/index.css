@@ -177,7 +177,7 @@
       pointer-events: none;
     }
     .btn-primary:hover {
-      background: var(--blue-h);
+      background: var(--blue);
       transform: translateY(-1px);
       box-shadow: 0 10px 28px rgba(217,95,26,.45);
     }
