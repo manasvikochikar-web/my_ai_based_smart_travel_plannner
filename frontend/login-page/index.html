@@ -26,36 +26,44 @@
 
 
   <!-- ── Sign In Panel ── -->
-  <div class="panel active" id="panel-signin">
 
-    <div class="field">
-      <label>Email Address</label>
-      <div class="input-wrap">
-        <input type="email" id="email-in" placeholder="you@gmail.com" autocomplete="email"/>
-      </div>
+<!-- SIGN IN PANEL -->
+<div class="panel active" id="panel-signin">
+
+  <div class="field">
+    <label>Email Address</label>
+    <div class="input-wrap">
+      <input 
+        type="email" 
+        id="email-in" 
+        placeholder="you@gmail.com" 
+        autocomplete="email"
+        required
+      />
     </div>
+  </div>
 
-  <form>
-    <div class="field">
-      <label>Password</label>
-
-      <div class="input-wrap">
-        <input 
-          type="password" 
-          id="pw-in" 
-          placeholder="••••••••"
-          pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}"
-          title="Minimum 8 characters, at least one letter and one number"
-          required
-        />
-        <button type="button" class="show-btn" onclick="toggle('pw-in', this)">Show</button>
-      </div>
-
-      <div class="forgot">
-        <a href="#">Forgot password?</a>
-      </div>
+  <div class="field">
+    <label>Password</label>
+    <div class="input-wrap">
+      <input 
+        type="password" 
+        id="pw-in" 
+        placeholder="••••••••"
+        pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}"
+        title="Minimum 8 characters, at least one letter and one number"
+        required
+      />
+      <button type="button" class="show-btn" onclick="toggle('pw-in', this)">Show</button>
     </div>
-  </form>
+    <div class="forgot">
+      <a href="#">Forgot password?</a>
+    </div>
+  </div>
+
+  <button type="button" class="btn-primary" onclick="handleSignIn()">Sign In</button>
+
+</div>
 
   <a href="main.html">
   <button class="btn-primary" >Sign In</button>
