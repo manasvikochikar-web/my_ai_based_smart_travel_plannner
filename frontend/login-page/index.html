@@ -31,22 +31,36 @@
     <div class="field">
       <label>Email Address</label>
       <div class="input-wrap">
-        <input type="email" id="email-in" placeholder="you@example.com" autocomplete="email"/>
+        <input type="email" id="email-in" placeholder="you@gmail.com" autocomplete="email"/>
       </div>
     </div>
 
+  <form>
     <div class="field">
       <label>Password</label>
+
       <div class="input-wrap">
-        <input type="password" id="pw-in" placeholder="••••••••"/>
-        <button class="show-btn" onclick="toggle('pw-in',this)">Show</button>
+        <input 
+          type="password" 
+          id="pw-in" 
+          placeholder="••••••••"
+          pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}"
+          title="Minimum 8 characters, at least one letter and one number"
+          required
+        />
+        <button type="button" class="show-btn" onclick="toggle('pw-in', this)">Show</button>
       </div>
-      <div class="forgot"><a href="#">Forgot password?</a></div>
+
+      <div class="forgot">
+        <a href="#">Forgot password?</a>
+      </div>
     </div>
+  </form>
 
-    <button class="btn-primary"  onclick="handleSignIn()">Sign In</button>
-
-    <div class="divider">or</div>
+  <a href="main.html">
+  <button class="btn-primary" >Sign In</button>
+</a>
+ <div class="divider">or</div>
 
  
 
