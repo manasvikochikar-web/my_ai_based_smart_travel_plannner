@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ChaloGhoomne – Sign In</title>
+  <title>bharatbhraman – Sign In</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="index.css">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
       --cream:    #f5efe6;
       --card-bg:  #fdfaf5;
-      --orange:   #d95f1a;
-      --orange-h: #c24e10;
+      --blue:   blue;
+      
       --text:     #2b1d0e;
       --muted:    #9a7f66;
       --border:   #e4d5c3;
@@ -59,7 +60,7 @@
     }
     .logo-icon {
       width: 52px; height: 52px;
-      background: var(--orange);
+      background: var(--blue);
       border-radius: 14px;
       display: flex; align-items: center; justify-content: center;
       box-shadow: 0 6px 20px rgba(217,95,26,.35);
@@ -72,7 +73,7 @@
       color: var(--text);
       letter-spacing: -.3px;
     }
-    .logo-name span { color: var(--orange); }
+    .logo-name span { color: var(--blue); }
     .logo-tagline {
       font-size: .82rem;
       color: var(--muted);
@@ -103,7 +104,7 @@
       transition: all .25s ease;
     }
     .tab.active {
-      background: var(--orange);
+      background: var(--blue);
       color: #fff;
       box-shadow: 0 4px 14px rgba(217,95,26,.35);
     }
@@ -134,7 +135,7 @@
     }
     .input-wrap input::placeholder { color: #c5b09a; }
     .input-wrap input:focus {
-      border-color: var(--orange);
+      border-color: var(--blue);
       box-shadow: 0 0 0 3px rgba(217,95,26,.12);
     }
     .show-btn {
@@ -146,7 +147,7 @@
       color: var(--muted); cursor: pointer;
       padding: 0;
     }
-    .show-btn:hover { color: var(--orange); }
+    .show-btn:hover { color: var(--blue); }
 
     .forgot {
       text-align: right;
@@ -158,13 +159,13 @@
       text-decoration: none;
       font-weight: 500;
     }
-    .forgot a:hover { color: var(--orange); }
+    .forgot a:hover { color: var(--blue); }
 
     /* ── Primary Button ── */
     .btn-primary {
       width: 100%;
       padding: 15px;
-      background: var(--orange);
+      background: var(--blue);
       color: #fff;
       border: none;
       border-radius: 50px;
@@ -185,7 +186,7 @@
       pointer-events: none;
     }
     .btn-primary:hover {
-      background: var(--orange-h);
+      background: var(--blue-h);
       transform: translateY(-1px);
       box-shadow: 0 10px 28px rgba(217,95,26,.45);
     }
@@ -216,7 +217,7 @@
       transition: border-color .2s, box-shadow .2s, transform .15s;
     }
     .btn-google:hover {
-      border-color: var(--orange);
+      border-color: var(--blue);
       box-shadow: 0 4px 16px rgba(217,95,26,.12);
       transform: translateY(-1px);
     }
@@ -230,7 +231,7 @@
       color: var(--muted);
     }
     .card-footer a {
-      color: var(--orange);
+      color: var(--blue);
       font-weight: 600;
       text-decoration: none;
     }
@@ -256,7 +257,7 @@
         <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2Zm0 2a8 8 0 1 1 0 16A8 8 0 0 1 12 4Zm3.2 3.6-4.8 2-2 4.8 4.8-2 2-4.8Zm-3.2 3a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/>
       </svg>
     </div>
-    <div class="logo-name">Chalo<span>Ghoomne</span></div>
+    <div class="logo-name">bharat<span>bhraman</span></div>
     <div class="logo-tagline">Your AI Travel Companion<br>for Unforgettable Indian Adventures</div>
   </div>
 
