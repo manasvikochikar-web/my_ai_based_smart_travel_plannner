@@ -4,7 +4,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
 
-SHEETDB_API_URL = "https://sheetdb.io/api/v1/r64qchfgphnps"  # ← replace this
+SHEETDB_API_URL = "api_key"  # ← replace this
 
 @app.route('/')
 def index():
@@ -21,7 +21,7 @@ def signin():
             return jsonify({ 'error': 'Email and password are required' }), 400
 
         # Fetch user from SheetDB
-        response = requests.get("https://sheetdb.io/api/v1/r64qchfgphnps" + '/search', params={ 'email': email })
+        response = requests.get("api_key" + '/search', params={ 'email': email })
         users    = response.json()
 
         if not users:
